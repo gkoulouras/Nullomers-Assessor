@@ -25,3 +25,7 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
 
 $ python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF
 
+<b>Results:</b>
+
+Preliminary analysis has been done in multiple genomes and proteomes of various organisms. The results of this study are provided via <b>Nullomers Database</b> a constantly enriched web-based database publicly accessible at http://83.212.98.39/nullomersdb/default
+
