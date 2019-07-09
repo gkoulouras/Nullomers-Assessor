@@ -11,8 +11,8 @@
     --threshold                         <dbl>       A float value which indicates the p-value of statistical correction
     --level                             <str>       'DNA' for genome analysis, 'PROT' if the input sequences are proteins
     --statistical-correction            <str>       'BONF' for a standard Bonferroni correction, 
-    'ADJ-BONF' for an adjusted Bonferroni correction or 
-    'FDR' for a False Discovery Rate correction method 
+                                                    'ADJ-BONF' for an adjusted Bonferroni correction or 
+                                                    'FDR' for a False Discovery Rate correction method 
 
 ```
 
