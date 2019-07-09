@@ -11,14 +11,14 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
 
 ```
 --absolute-path-of-fasta-file       <str>   <mandatory>     The file should be one line fasta file
---absolute-path-of-nullomers-file   <str>   <mandatory>       The file should include a list of nullomers
---threshold                         <dbl>   <mandatory>       A float value which indicates the p-value of 
-                                                              statistical correction
---level                             <str>   <mandatory>       'DNA' for genome analysis, 
-                                                              'PROT' if the input sequences are proteins
---statistical-correction            <str>   <mandatory>       'BONF' for a standard Bonferroni correction, 
-                                                              'ADJ-BONF' for an adjusted Bonferroni correction, or 
-                                                              'FDR' for a False Discovery Rate correction method 
+--absolute-path-of-nullomers-file   <str>   <mandatory>     The file should include a list of nullomers
+--threshold                         <dbl>   <mandatory>     A float value which indicates the p-value of 
+                                                            statistical correction
+--level                             <str>   <mandatory>     'DNA' for genome analysis, 
+                                                            'PROT' if the input sequences are proteins
+--statistical-correction            <str>   <mandatory>     'BONF' for a standard Bonferroni correction, 
+                                                            'ADJ-BONF' for an adjusted Bonferroni correction, or 
+                                                            'FDR' for a False Discovery Rate correction method 
 ```
 
 <b>Example:</b>
