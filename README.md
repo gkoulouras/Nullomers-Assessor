@@ -29,5 +29,6 @@ $ python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/
 
 Preliminary analysis has been conducted in multiple genomes and proteomes of various organisms. The results of this study are provided via <b>Nullomers Database</b> a constantly enriched web-based database publicly accessible at http://83.212.98.39/nullomersdb/default
 
-<b>Citations:</b>
+<b>Reference:</b>
+
 Manuscript submitted for publication. As soon as that article is accepted for publication we will update this field.
