@@ -6,8 +6,8 @@
 <b>Usage:</b> Simply download and execute the <b>nullomers_assessor.py</b> script by giving the following arguments.
 
 ```
---absolute-path-of-fasta-file       <str>     The file should be one line fasta file
---absolute-path-of-nullomers-file   <str>     The file should include a list of nullomers
+    --absolute-path-of-fasta-file       <str>     The file should be one line fasta file
+    --absolute-path-of-nullomers-file   <str>     The file should include a list of nullomers
 
 ```
 
