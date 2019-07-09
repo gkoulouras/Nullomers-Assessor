@@ -17,4 +17,5 @@
                                                     'FDR' for a False Discovery Rate correction method 
 ```
 
-<b>Example: </b> python3 
+<b>Example:</b> python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF
+
