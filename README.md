@@ -17,9 +17,9 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
                                                             greater than the specified value are discarded
 --level                             <str>   <mandatory>     'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
---statistical-correction            <str>   <mandatory>     'BONF' for a standard Bonferroni correction, 
-                                                            'ADJ-BONF' for an adjusted Bonferroni correction,
-                                                            'FDR' for a False Discovery Rate correction method 
+--statistical-correction            <str>   <mandatory>     'BONF' for standard Bonferroni correction, 
+                                                            'ADJ-BONF' for adjusted Bonferroni correction,
+                                                            'FDR' for False Discovery Rate correction method 
 ```
 
 <b>Example:</b>
