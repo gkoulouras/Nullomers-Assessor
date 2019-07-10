@@ -10,7 +10,7 @@ Nullomers Assessor is a computational method for the evaluation and classificati
 Simply download and execute the <b>nullomers_assessor.py</b> script by giving the following 5 arguments.
 
 ```
---absolute-path-of-fasta-file       <str>   <mandatory>     The file should be one line fasta file
+--absolute-path-of-fasta-file       <str>   <mandatory>     The file should be an one-line fasta file
 --absolute-path-of-nullomers-file   <str>   <mandatory>     The file should include a list of nullomers
 --threshold                         <dbl>   <mandatory>     A float value which indicates the p-value of 
                                                             statistical correction
