@@ -22,7 +22,7 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
                                                             'FDR' for False Discovery Rate correction method 
 ```
 
-<b>Example:</b>
+<b>Example of usage:</b>
 
 $ python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF
 
