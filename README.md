@@ -39,7 +39,7 @@ Manuscript submitted for publication. As soon as the article is accepted for pub
 For questions, suggestions, bug-reports or feedback, please get in touch by email:
 <ul><li>gkoulouras {at} gmail {dot} com</li></ul>
 
-<b>License</b>
+<b>License:</b>
 
 This project is licensed under the Apache 2.0 license, quoted below.
 
