@@ -37,4 +37,4 @@ Manuscript submitted for publication. As soon as the article is accepted for pub
 <b>Contact:</b>
 
 For questions, suggestions, bug-reports or feedback, please email us:
-<ul><li>gkoulouras@gmail.com</li></ul>
+<ul><li>gkoulouras [at] gmail [dot] com</li></ul>
