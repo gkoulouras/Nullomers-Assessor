@@ -24,7 +24,11 @@ Simply download and execute the <b>NullomersAssessor.py</b> script by giving the
 
 <b>Example of usage:</b>
 
+Unix OS:
 $ python3 NullomersAssesor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF
+
+Windows OS:
+> py NullomersAssesor.py C:\input\P.troglodytes_genome_oneline.fasta C:\output\pantro_14mers.out 0.01 DNA BONF
 
 <b>Results:</b>
 
