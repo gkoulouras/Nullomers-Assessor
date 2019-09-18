@@ -7,7 +7,7 @@ Nullomers Assessor is a computational method for the evaluation and classificati
 
 <b>Preparatory steps:</b>
 
-The <b>NullomersAssessor.py</b> script (which can be downloaded directly from this repository) requires 2 input files. The first one should be an one-header/one-line fasta file containing the entire genome/proteome of a species. This can be easily created by the <b>OneHeaderLineFormatter.py</b> script. The second file should be a list of nullomers. Tools such as <b>[MAW](https://github.com/solonas13/maw)</b> or <b>[em-MAW](https://github.com/solonas13/maw/tree/master/em-maw)</b> can be used for the calculation of globally missing sequences. Please find out more information on how to run the preparatory steps in the detailed [user guide](https://www.nullomers.org/Documentation_NullomersAssessor) of <b>Nullomers Database</b>.
+The <b>NullomersAssessor.py</b> script (which can be downloaded directly from this repository) requires 2 input files. The first one should be an one-header/one-line fasta file containing the entire genome/proteome of a species. This can be easily created by the <b>OneHeaderFastaFormatter.py</b> script. The second file should be a list of nullomers. Tools such as <b>[MAW](https://github.com/solonas13/maw)</b> or <b>[em-MAW](https://github.com/solonas13/maw/tree/master/em-maw)</b> can be used for the calculation of globally missing sequences. Please find out more information on how to run the preparatory steps in the detailed [user guide](https://www.nullomers.org/Documentation_NullomersAssessor) of <b>Nullomers Database</b>.
 
 <b>Usage:</b>
 
