@@ -5,12 +5,16 @@
 
 Nullomers Assessor is a computational method for the evaluation and classification of a list of Nullomers as 'significantly absent' or not, depending on the distribution of residues in a specified genome/proteome. The underlying method is based on 4 different transition probabilities (orders) of the Markov chain stohastic model. The method is able to assess either nucleotide sequences or amino acid oligomers. Three different statictical correction methods have been implemented and are provided with the current version of the script.
 
+<b>Preparatory steps:</b>
+
+<b>NullomersAssessor.py</b> script requires 2 input files. The first one should be an one-header/one-line fasta file containing the entire genome/proteome of a species. This can be easily created by the <b>OneHeaderLineFormatter.py</b> script. The second file . Please find out more information on how to run the preparatory steps in the detailed user guide of  <b>[Nullomers Database](https://www.nullomers.org/Documentation_NullomersAssessor)</b>
+
 <b>Usage:</b>
 
 Simply download and execute the <b>NullomersAssessor.py</b> script by giving the following 5 arguments (separated by a blank space).
 
 ```
---absolute-path-of-fasta-file       <str>   <mandatory>     The file should be an one-line fasta file
+--absolute-path-of-fasta-file       <str>   <mandatory>     The file should be an one-header/one-line fasta file
 --absolute-path-of-nullomers-file   <str>   <mandatory>     The file should include a list of nullomers
 --threshold                         <dbl>   <mandatory>     A float number which indicates the threshold of 
                                                             statistical correction. Nullomers with q-values 
