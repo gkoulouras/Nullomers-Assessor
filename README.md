@@ -40,7 +40,7 @@ Preliminary analysis has been conducted in multiple genomes and proteomes of var
 
 <b>Publication:</b>
 
-Manuscript submitted for publication. This field will be updated as soon as the article is accepted for publication.
+<i>Manuscript submitted for publication. This field will be updated as soon as the article is accepted for publication.</i>
 
 <b>Contact:</b>
 
