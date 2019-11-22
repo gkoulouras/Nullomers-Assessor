@@ -1,7 +1,6 @@
 #pip3 install biopython
 #pip3 install statsmodels
 #pip3 install scipy
-
 import sys
 import Bio
 import statsmodels
@@ -22,19 +21,17 @@ from time import process_time
 ########## main function ##############################################################################
 
 if __name__ == "__main__":
-    try:
-        fasta_file = sys.argv[1]
-        nullomers_file = sys.argv[2]
-        threshold = float(sys.argv[3])
-        level = sys.argv[4]
-        correction_method = sys.argv[5]
-    except:
-        print("\n**An error occured. Please check the given arguments.**\n")
-        raise SystemExit()
-     
+    fasta_file = sys.argv[1]
+    nullomers_file = sys.argv[2]
+    threshold = float(sys.argv[3])
+    level = sys.argv[4]
+    correction_method = sys.argv[5]
+else:
+    print("\n**An error occured**\n")
+    raise SystemExit() 
 
-if (correction_method != "FDR") and (correction_method != "ADJ-BONF") and (correction_method != "BONF"):
-    print("\n**The correction method you declared is incorrect. Value should be either FDR or BONF or ADJ-BONF**\n")
+if (correction_method != "FDR") and (correction_method != "ADJ-FDR") and (correction_method != "BONF"):
+    print("\n**The correction method you declared is incorrect. Value should be either FDR or BONF or ADJ-FDR**\n")
     raise SystemExit()
 
 
@@ -332,8 +329,8 @@ with open(nullomers_file, encoding='utf8') as f:
         print("\n**Nullomers should be up to 18 nucleotides in length using the FDR method. Please try again with shorter sequences**\n")
     elif (level == 'DNA' and correction_method == 'BONF' and max_len > 18):
         print("\n**Nullomers should be up to 18 nucleotides in length using the BONF method. Please try again with shorter sequences**\n")
-    elif (level == 'DNA' and correction_method == 'ADJ-BONF' and max_len > 14):
-        print("\n**Nullomers should be up to 14 nucleotides in length using the ADJ-BONF method. Please try again with shorter sequences**\n")
+    elif (level == 'DNA' and correction_method == 'ADJ-FDR' and max_len > 14):
+        print("\n**Nullomers should be up to 14 nucleotides in length using the ADJ-FDR method. Please try again with shorter sequences**\n")
         raise SystemExit()
 
 
@@ -551,7 +548,7 @@ with open(nullomers_file, encoding='utf8') as f:
 #####################
         
     
-    elif (correction_method == 'ADJ-BONF'): ##adjusted bonferroni correction
+    elif (correction_method == 'ADJ-FDR'): ##adjusted benjamini-hochberg method
         print("- The selected correction method is: " + str(correction_method) + "")
         print("- The p-value threshold is: " + str(threshold) + "\n")
     
