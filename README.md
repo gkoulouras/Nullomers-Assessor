@@ -45,7 +45,7 @@ Preliminary analysis has been conducted in multiple genomes and proteomes of var
 <b>Contact:</b>
 
 For questions, suggestions, bug-reports or feedback, please get in touch by email:
-<ul><li>gkoulouras {at} gmail {dot} com</li></ul>
+<ul><li>gkoulouras {at symbol} gmail {dot symbol} com</li></ul>
 
 <b>License:</b>
 
