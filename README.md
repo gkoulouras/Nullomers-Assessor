@@ -23,7 +23,7 @@ Simply download and execute the <b>NullomersAssessor.py</b> script by giving the
                                                             'PROT' for protein sequences
 --statistical-correction            <str>   <mandatory>     'BONF' for standard Bonferroni correction, 
                                                             'ADJ-FDR' for adjusted Benjamini-Hochberg correction,
-                                                            'FDR' for False Discovery Rate correction method 
+                                                            'FDR' for standard False Discovery Rate correction method 
 ```
 
 <b>Example of usage:</b>
