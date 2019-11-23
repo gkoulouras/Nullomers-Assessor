@@ -15,7 +15,7 @@ Simply download and execute the <b>NullomersAssessor.py</b> script by giving the
 
 ```
 --absolute-path-of-fasta-file       <str>   <mandatory>     A typical fasta file (either DNA or protein sequences)
---absolute-path-of-nullomers-file   <str>   <mandatory>     The file should include a list of nullomers
+--absolute-path-of-nullomers-file   <str>   <mandatory>     A list of nullomers (without header)
 --threshold                         <dbl>   <mandatory>     A float number which indicates the threshold of 
                                                             statistical correction. Nullomers with q-values 
                                                             greater than the specified value are discarded
