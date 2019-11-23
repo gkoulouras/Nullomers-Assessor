@@ -36,7 +36,7 @@ Windows OS:
 
 <b>Results:</b>
 
-Preliminary analysis has been conducted in multiple genomes and proteomes of various organisms including <i>Human</i>. The results of this study are freely available through <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-accessed repository of significant Minimal Absent Words.
+Preliminary analysis has been conducted in multiple genomes and proteomes of various organisms including <i>Human</i>. The results of this study are freely available through <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-accessible repository of significant Minimal Absent Words.
 
 <b>Publication:</b>
 
