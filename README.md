@@ -22,7 +22,7 @@ Simply download and execute the <b>NullomersAssessor.py</b> script by giving the
 --sequences                         <str>   <mandatory>     'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
 --statistical-correction            <str>   <mandatory>     'BONF' for standard Bonferroni correction, 
-                                                            'ADJ-FDR' for adjusted Benjamini-Hochberg correction,
+                                                            'ADJ-BONF' for adjusted Bonferroni correction,
                                                             'FDR' for standard False Discovery Rate correction method 
 ```
 
