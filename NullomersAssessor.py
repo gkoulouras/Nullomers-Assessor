@@ -30,7 +30,7 @@ else:
     print("\n**An error occured**\n")
     raise SystemExit() 
 
-if (correction_method != "FDR") and (correction_method != "ADJ-FDR") and (correction_method != "BONF"):
+if (correction_method != "FDR") and (correction_method != "ADJ-BONF") and (correction_method != "BONF"):
     print("\n**The correction method you declared is incorrect. Value should be either FDR or BONF or ADJ-FDR**\n")
     raise SystemExit()
 
@@ -548,7 +548,7 @@ with open(nullomers_file, encoding='utf8') as f:
 #####################
         
     
-    elif (correction_method == 'ADJ-FDR'): ##adjusted benjamini-hochberg method
+    elif (correction_method == 'ADJ-BONF'): ##adjusted benjamini-hochberg method
         print("- The selected correction method is: " + str(correction_method) + "")
         print("- The p-value threshold is: " + str(threshold) + "\n")
     
