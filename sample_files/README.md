@@ -25,7 +25,7 @@
 
 # Important note:
 
-The files on this directory are provided as dummy records for testing purposes. 
+The files on this directory are provided for testing purposes. 
 
 *Mycoplasma genitalium* has **no** significant results regardless selected 
 statistical correction method. *Pseudomonas fluorescens* presents significant 
