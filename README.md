@@ -21,9 +21,9 @@ Simply download and execute the <b>NullomersAssessor.py</b> script by giving the
                                                             p-values greater than the specified cut-off are discarded
 --sequences                         <str>   <mandatory>     'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
---statistical-correction            <str>   <mandatory>     'BONF' for standard Bonferroni correction, 
-                                                            'ADJ-BONF' for adjusted Bonferroni correction,
-                                                            'FDR' for standard False Discovery Rate correction method 
+--statistical-correction            <str>   <mandatory>     'BONF' for Bonferroni correction, 
+                                                            'TARONE' for Tarone correction,
+                                                            'FDR' for Benjamini-Hochberg procedure 
 ```
 
 <b>Example of usage:</b>
