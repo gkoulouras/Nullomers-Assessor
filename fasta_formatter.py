@@ -1,14 +1,14 @@
-################# one line fasta file creator #########################
+################# Two-line FASTA file creator #########################
 import sys
 
 if __name__ == "__main__":
     try:
         file_path = sys.argv[1]
     except:
-        print("\n**The full path of the file including the filename and the filetype are required to be given as an argument.**\n**Please correct and try again.**\n")
+        print("\n**The full path of the file including the filename and the filetype are required as an argument.**\n**Please correct and try again.**\n")
         raise SystemExit() 
 
-print("******* Typical fasta to one line fasta formatter  *******\n")
+print("******* Two-line FASTA file formatter  *******\n")
 
 
 with open(file_path) as f1:
