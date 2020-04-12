@@ -27,6 +27,6 @@
 
 The files on this directory are provided for testing purposes. 
 
-*Mycoplasma genitalium* has **no** significant results regardless selected 
-statistical correction method. *Pseudomonas fluorescens* presents significant 
-missing motifs by selecting either BONF, TARONE, or FDR method.  
+*Mycoplasma genitalium* outputs **no** significant results regardless statistical 
+correction method. *Pseudomonas fluorescens* presents significant missing motifs
+either by selecting BONF, TARONE, or FDR method.  
