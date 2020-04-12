@@ -51,7 +51,7 @@ For questions, suggestions, bug-reports or feedback, please get in touch by emai
 
 This project is licensed under the Apache 2.0 license, quoted below.
 
-Copyright (c) [current_date format='Y'] Grigorios Koulouras
+Copyright (c) {{ .Now.Year }} Grigorios Koulouras
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
