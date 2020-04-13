@@ -19,7 +19,7 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
 --threshold                         <dbl>   <mandatory>     A float number between [0-1] indicating the threshold of 
                                                             statistical correction. Nullomers with q-values greater
                                                             than the user-specified cut-off will be discarded
---sequences                         <str>   <mandatory>     'DNA' for nucleotide sequences, 
+--type-of-sequences                         <str>   <mandatory>     'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
 --statistical-correction            <str>   <mandatory>     'BONF' for Bonferroni correction, 
                                                             'TARONE' for Tarone correction,
