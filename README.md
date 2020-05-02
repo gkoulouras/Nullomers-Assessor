@@ -40,7 +40,7 @@ Nullomers Assessor has been applied to multiple genomes and proteomes of various
 
 <b>Publication:</b>
 
-<i>Manuscript submitted for publication. We will be updated this line as soon as the article is published.</i>
+<i>Manuscript submitted for publication. We will update this section as soon as the article is published.</i>
 
 <b>Contact:</b>
 
