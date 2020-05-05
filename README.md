@@ -3,7 +3,7 @@
 
 <b>Description:</b>
 
-Nullomers Assessor is a probabilistic methodology for the statistical evaluation and classification of biological nullomers as 'significantly absent' or 'insignificant', based on the frequency and distribution of residues (nucleotides/amino acids) in the entire genome/proteome of a species. A 'significant absent' oligomer is a motif statistically expected to exist, but in reality it is entirely absent. The underlying method estimates the frequency of residues and subsequently calculates 3 different transition probabilities, based on the first, second, and third order of Markovian chains. The method is designed to assess either nucleotide or amino acid oligomers. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
+Nullomers Assessor is a probabilistic methodology for the statistical evaluation and classification of biological nullomers as 'significant absent' or 'insignificant', based on the frequency and distribution of residues (nucleotides/amino acids) in the entire genome/proteome of a species. A 'significant absent' oligomer is a motif statistically expected to exist, but in reality it is entirely absent. The underlying method estimates the frequency of residues and subsequently calculates 3 different transition probabilities, based on the first, second, and third order of Markovian chains. The method is designed to assess either nucleotide or amino acid oligomers. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
 
 <b>Preparatory stage:</b>
 
