@@ -3,7 +3,7 @@
 
 <b>Description:</b>
 
-Nullomers Assessor is a probabilistic methodology for the statistical evaluation and classification of biological nullomers as 'significantly absent' or 'insignificant', based on the frequency and distribution of residues (nucleotides/amino acids) in the entire genome/proteome of a species. A 'significant absent' oligomer is a motif statistically expected to exist, but in reality it is entirely absent. The underlying method estimates the frequency of residues and subsequently calculates 3 different transition probabilities, based on the first, second, and third order of Markovian chains. The method is able to assess either nucleotide or amino acid oligomers. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
+Nullomers Assessor is a probabilistic methodology for the statistical evaluation and classification of biological nullomers as 'significantly absent' or 'insignificant', based on the frequency and distribution of residues (nucleotides/amino acids) in the entire genome/proteome of a species. A 'significant absent' oligomer is a motif statistically expected to exist, but in reality it is entirely absent. The underlying method estimates the frequency of residues and subsequently calculates 3 different transition probabilities, based on the first, second, and third order of Markovian chains. The method is designed to assess either nucleotide or amino acid oligomers. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
 
 <b>Preparatory stage:</b>
 
@@ -14,25 +14,26 @@ The <b>nullomers_assessor.py</b> script (which can be downloaded and run directl
 Simply download and execute the <b>nullomers_assessor.py</b> script by giving the following 5 arguments (separated by a blank space).
 
 ```
---absolute-path-of-fasta-file       <str>   <mandatory>     A typical fasta file (either DNA or protein sequences)
---absolute-path-of-nullomers-file   <str>   <mandatory>     A list of nullomers (without header)
---threshold                         <dbl>   <mandatory>     A float number between [0-1] indicating the threshold of 
+--absolute-path-of-fasta-file       <string>   <mandatory>  A typical fasta file (either DNA or protein sequences)
+--absolute-path-of-nullomers-file   <string>   <mandatory>  A list of nullomers (without header)
+--threshold                         <double>   <mandatory>  A float number between [0-1] indicating the threshold of 
                                                             statistical correction. Nullomers with q-values greater
                                                             than the user-specified cut-off will be discarded
---type-of-sequences                 <str>   <mandatory>     'DNA' for nucleotide sequences, 
+--type-of-sequences                 <string>   <mandatory>  'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
---statistical-correction            <str>   <mandatory>     'BONF' for Bonferroni correction, 
+--statistical-correction            <string>   <mandatory>  'BONF' for Bonferroni correction, 
                                                             'TARONE' for Tarone correction,
-                                                            'FDR' for Benjamini-Hochberg procedure 
+                                                            'FDR' for Benjamini-Hochberg procedure
+--print-log                         <boolean>  <mandatory>  'TRUE' or 'FALSE'                                                         
 ```
 
 <b>Example of usage:</b>
 
 Unix OS:
-> python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF
+> python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF TRUE
 
 Windows OS:
-> py nullomers_assessor.py C:\input\P.troglodytes_genome_oneline.fasta C:\output\pantro_14mers.out 0.01 DNA BONF
+> py nullomers_assessor.py C:\input\P.troglodytes_genome_oneline.fasta C:\output\pantro_14mers.out 0.01 DNA BONF TRUE
 
 <b>Results:</b>
 
