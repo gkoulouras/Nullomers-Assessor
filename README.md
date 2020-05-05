@@ -11,7 +11,7 @@ The <b>nullomers_assessor.py</b> script (which can be downloaded and run directl
 
 <b>Usage:</b>
 
-Simply download and execute the <b>nullomers_assessor.py</b> script by giving the following 5 arguments (separated by a blank space).
+Simply download and execute the <b>nullomers_assessor.py</b> script by giving the following 6 arguments (separated by a blank space).
 
 ```
 --absolute-path-of-fasta-file       <string>   <mandatory>  A typical fasta file (either DNA or protein sequences)
