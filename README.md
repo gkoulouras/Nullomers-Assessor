@@ -45,7 +45,7 @@ Nullomers Assessor has been applied to multiple genomes and proteomes of various
 
 <b>Contact:</b>
 
-For questions, suggestions, bug-reports or feedback, please get in touch by email:
+For questions, suggestions, bug-reports or feedback, please get in touch:
 <ul><li>gkoulouras {at symbol} gmail {dot symbol} com</li></ul>
 
 <b>License:</b>
