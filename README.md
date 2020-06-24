@@ -37,7 +37,7 @@ Windows OS:
 
 <b>Results:</b>
 
-Nullomers Assessor has been applied to multiple genomes and proteomes of various organisms including <i>Homo Sapiens</i>. The results of the study are freely accessible through <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-based repository of significant Minimal Absent Words.
+Nullomers Assessor has been applied to multiple genomes and proteomes of various organisms including <i>Homo Sapiens</i>. The results of the study are provided via <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-based repository which hosts significant nullomers from hundreds of species and thoudands of viruses.
 
 <b>Publication:</b>
 
