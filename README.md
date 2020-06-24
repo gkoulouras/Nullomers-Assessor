@@ -1,5 +1,5 @@
 # Nullomers Assessor
-<b>Nullomers Assessor:</b> A computational method for the statistical evaluation of nullomers (a.k.a. Minimal Absent Words)
+<b>Nullomers Assessor:</b> A computational method for the statistical evaluation of nullomers (a.k.a. minimal absent words)
 
 <b>Description:</b>
 
