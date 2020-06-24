@@ -30,10 +30,10 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
 <b>Example of usage:</b>
 
 Unix OS:
-> python3 nullomers_assessor.py input/P.troglodytes_genome_oneline.fasta output/pantro_14mers.out 0.01 DNA BONF TRUE
+> python3 nullomers_assessor.py input/P.troglodytes_genome.fasta output/pantro_nullomers.out 0.01 DNA BONF TRUE
 
 Windows OS:
-> py nullomers_assessor.py C:\input\P.troglodytes_genome_oneline.fasta C:\output\pantro_14mers.out 0.01 DNA BONF TRUE
+> py nullomers_assessor.py C:\input\P.troglodytes_genome.fasta C:\output\pantro_nullomers.out 0.01 DNA BONF TRUE
 
 <b>Results:</b>
 
