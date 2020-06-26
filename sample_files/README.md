@@ -1,7 +1,5 @@
 # File formats and content:
 
-Unzip the folders.
-
   <b>*Mycoplasma_genitalium.fna*</b>
        One-header one-line FASTA file of nucleotide sequences from the   
        Mycoplasma genitalium bacterium. The original file has been retrieved 
