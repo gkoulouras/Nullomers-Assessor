@@ -1,13 +1,13 @@
 # Nullomers Assessor
-<b>Nullomers Assessor:</b> A computational method for the statistical evaluation of nullomers (a.k.a. minimal absent words)
+<b>Nullomers Assessor:</b> A computational method for the statistical evaluation of nullomers and minimal absent words (MAWs)
 
 <b>Description:</b>
 
-Nullomers Assessor is a probabilistic methodology for the evaluation of biological nullomers based on Markovian models with multiple-testing correction. A 'significant absent' oligomer is a motif statistically expected to exist, but in reality it is entirely absent. The algorithm estimates the frequency of residues and subsequently calculates 3 transition probabilities, one for each of the first three Markovian orders. The method can analyses either nucleotide or amino acid oligomers. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
+Nullomers Assessor is a probabilistic methodology for the evaluation of biological MAWs based on Markovian models with multiple-testing correction. A 'significant absent' MAW is a motif statistically expected to exist, but in reality it is absent. The algorithm estimates the frequency of residues and subsequently calculates 3 transition probabilities, one for each of the first three Markovian orders. The method can analyses either nucleotide or amino acid sequences. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
 
 <b>Preparatory stage:</b>
 
-The <b>nullomers_assessor.py</b> script requires 2 input files. The first one should be a fasta file containing the entire genome/proteome of a species. The second file should be a list of nullomers. Tools such as <b>[MAW](https://github.com/solonas13/maw)</b> or <b>[em-MAW](https://github.com/solonas13/maw/tree/master/em-maw)</b> can be used for the identification of nullomers. The two above-mentioned tools though, require a fasta file with one header and one sequence in order to calculate globally missing motifs from a given genome/proteome. The specific format can be easily achieved by using the <b>fasta_formatter.py</b> script which transforms a typical fasta file to a two-line fasta file. Sample files are provided in a separate directory. For more information visit: <b>[https://www.nullomers.org/](https://www.nullomers.org/)</b>.
+The <b>nullomers_assessor.py</b> script requires 2 input files. The first one should be a fasta file containing the entire genome/proteome of a species. The second file should be a list of MAWs. Tools such as <b>[MAW](https://github.com/solonas13/maw)</b> or <b>[em-MAW](https://github.com/solonas13/maw/tree/master/em-maw)</b> can be used for the identification of MAWs. The two above-mentioned tools though, require a fasta file with one header and one sequence in order to calculate globally missing motifs from a given genome/proteome. The specific format can be easily achieved by using the <b>fasta_formatter.py</b> script which transforms a typical fasta file to a two-line fasta file. Sample files are provided in a separate directory. For more information visit: <b>[https://www.nullomers.org/](https://www.nullomers.org/)</b>.
 
 <b>Usage:</b>
 
@@ -15,9 +15,9 @@ Simply download and execute the <b>nullomers_assessor.py</b> script by giving th
 
 ```
 --absolute-path-of-fasta-file       <string>   <mandatory>  A typical fasta file (either DNA or protein sequences)
---absolute-path-of-nullomers-file   <string>   <mandatory>  A list of nullomers (without header)
+--absolute-path-of-MAWs-file        <string>   <mandatory>  A list of MAWs (without header)
 --threshold                         <double>   <mandatory>  A float number between [0-1] indicating the threshold of 
-                                                            statistical correction. Nullomers with corrected p-values
+                                                            statistical correction. MAWs with corrected p-values
                                                             greater than the user-specified cut-off will be discarded
 --type-of-sequences                 <string>   <mandatory>  'DNA' for nucleotide sequences, 
                                                             'PROT' for protein sequences
@@ -37,7 +37,7 @@ Windows OS:
 
 <b>Results:</b>
 
-Nullomers Assessor has been applied to multiple genomes and proteomes of various organisms including <i>Homo Sapiens</i>. The results of the study are provided via <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-based repository which hosts significant nullomers from hundreds of species and thoudands of viruses.
+Nullomers Assessor has been applied to numerous genomes and proteomes of various organisms including <i>Homo Sapiens</i>. The results of the study are provided via <b>[Nullomers Database](https://www.nullomers.org)</b>, a continuously enriched web-based repository which hosts significant MAWs from hundreds of species and thoudands of individual virus sequences.
 
 <b>Publication:</b>
 
