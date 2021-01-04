@@ -3,7 +3,7 @@
 
 <b>Description:</b>
 
-Nullomers Assessor is a probabilistic methodology for the evaluation of biological MAWs based on Markovian models with multiple-testing correction. A 'significant absent' MAW is an absent motif which is statistically expected to occur. Significant absent motifs are considered to be under negative selection. The algorithm estimates the frequency of residues and subsequently calculates 3 transition probabilities, one for each of the first three Markovian orders. The method can analyses either nucleotide or amino acid sequences. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
+Nullomers Assessor is a probabilistic methodology for the evaluation of biological MAWs based on Markovian models with multiple-testing correction. A 'significant' MAW is an absent motif which is statistically expected to occur. Significant absent motifs are considered to be under negative selection. The algorithm estimates the frequency of residues and subsequently calculates 3 transition probabilities, one for each of the first three Markovian orders. The method can analyses either nucleotide or amino acid sequences. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
 
 <b>Preparatory stage:</b>
 
