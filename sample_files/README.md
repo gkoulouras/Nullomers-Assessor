@@ -21,6 +21,6 @@
        https://github.com/solonas13/maw
 
 
-The files on this directory are provided for testing purposes. 
+The files in this directory are provided for testing purposes. 
 
 
