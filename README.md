@@ -41,8 +41,8 @@ Nullomers Assessor has been applied to numerous genomes and proteomes of various
 
 <b>Publication:</b>
 
-<i>For more information about the method and the statistical correction procedures, please consult the publication:</i><br>
-<i>Koulouras G, Frith MC. Significant non-existence of sequences in genomes and proteomes. <b>Nucleic Acids Res</b>. 2021;gkab139. [[link]](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab139/6166853)</i>
+For more information about the method and the statistical correction procedures, please consult the publication:<br>
+<i>Koulouras G, Frith MC. Significant non-existence of sequences in genomes and proteomes. <b>Nucleic Acids Res</b>. 2021;gkab139.</i>[[link]](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab139/6166853)
 
 <b>Contact:</b>
 
