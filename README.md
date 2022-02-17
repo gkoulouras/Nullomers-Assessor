@@ -46,7 +46,7 @@ Koulouras G, Frith MC. <b><i>Significant non-existence of sequences in genomes a
 
 <b>Contact:</b>
 
-For questions, suggestions, bug-reports, or feedback, please get in touch:
+For questions, suggestions, bug-reports, or feedback, please email me:
 <ul><li>gkoulouras {at symbol} gmail {dot symbol} com</li></ul>
 
 <b>License:</b>
