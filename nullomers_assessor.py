@@ -324,14 +324,16 @@ with open(nullomers_file, encoding='utf8') as f:
         ids_in_common = np.intersect1d(ids_in_common, idx3)
         #print(ids_in_common)
 
-      
-
         if ids_in_common.size:
-            if (print_log == 'TRUE'):
-                print("\n** Results **\n")
-            for index in ids_in_common:
-                print(str(lines[index]) + '\t' + str(max(prob_corr_zero_occur_list_zero_order[1][index], prob_corr_zero_occur_list_first_order[1][index], prob_corr_zero_occur_list_second_order[1][index], prob_corr_zero_occur_list_third_order[1][index])))
-        else:        
+            with open('output.txt', 'w') as output_h:
+                if (print_log == 'TRUE'):
+                    print("\n** Results **\n")
+                for index in ids_in_common:
+                    output_h.write('{}\t{}\n'.format(lines[index], max(prob_corr_zero_occur_list_zero_order[1][index],
+                                                                      prob_corr_zero_occur_list_first_order[1][index],
+                                                                      prob_corr_zero_occur_list_second_order[1][index],
+                                                                      prob_corr_zero_occur_list_third_order[1][index])))
+        else:
             print("No significant results found")
             
 ######################
