@@ -12,7 +12,7 @@ from Bio.SeqUtils.ProtParam import ProteinAnalysis
 from collections import defaultdict
 from itertools import islice, chain, product, combinations_with_replacement
 from time import process_time
-
+import tqdm
 
 ########## main function ##############################################################################
 
@@ -234,19 +234,19 @@ with open(nullomers_file, encoding='utf8') as f:
         probability_zero_occurrence_third_order = []
         pvalues_zero_order = np.ones(len(lines), dtype=int)
 
-        for index in range(len(lines)):
-            if (index % 1000000) == 0 and index != 0:
-                if (print_log == 'TRUE'):
-                    print(str(index) + ' rows have been parsed')
+        for _l in tqdm(lines):
+            # if (index % 1000000) == 0 and index != 0:
+            #     if (print_log == 'TRUE'):
+            #         print(str(index) + ' rows have been parsed')
             
-            motif_length = len(lines[index])
+            motif_length = len(_l)
 
             probability_one_occurrence_zero_order = 1
             probability_one_occurrence_first_order = 1
             probability_one_occurrence_second_order = 1
             probability_one_occurrence_third_order = 1
             
-            for ind, current_letter in enumerate(str(lines[index])):
+            for ind, current_letter in enumerate(str(_l)):
                 
                 if (ind == 0):
                     probability_one_occurrence_zero_order = probability_one_occurrence_zero_order * aminoacid_percentage[str(current_letter)]

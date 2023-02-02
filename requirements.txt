@@ -1,3 +1,4 @@
 statsmodels==0.9
 biopython==1.78
 numpy==1.21.6
+scipy==1.7.3
