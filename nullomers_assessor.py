@@ -234,11 +234,8 @@ with open(nullomers_file, encoding='utf8') as f:
         probability_zero_occurrence_third_order = []
         pvalues_zero_order = np.ones(len(lines), dtype=int)
 
-        for _l in tqdm(lines):
-            # if (index % 1000000) == 0 and index != 0:
-            #     if (print_log == 'TRUE'):
-            #         print(str(index) + ' rows have been parsed')
-            
+        for _l in tqdm.tqdm(lines):
+
             motif_length = len(_l)
 
             probability_one_occurrence_zero_order = 1
@@ -308,21 +305,9 @@ with open(nullomers_file, encoding='utf8') as f:
         idx2 = return_indices(prob_corr_zero_occur_list_second_order[0], True)
         idx3 = return_indices(prob_corr_zero_occur_list_third_order[0], True)
         
-        #for i in idx:
-            #print(str(i))
-        #for i1 in idx1:
-            #print(str(i1))
-        #for i2 in idx2:
-            #print(str(i2))
-        #for i3 in idx3:
-            #print(str(i3))
-        
-        ids_in_common = np.intersect1d(idx, idx1) 
-        #print(ids_in_common)
+        ids_in_common = np.intersect1d(idx, idx1)
         ids_in_common = np.intersect1d(ids_in_common, idx2)
-        #print(ids_in_common)
         ids_in_common = np.intersect1d(ids_in_common, idx3)
-        #print(ids_in_common)
 
         if ids_in_common.size:
             with open('output.txt', 'w') as output_h:
@@ -342,20 +327,18 @@ with open(nullomers_file, encoding='utf8') as f:
         if (print_log == 'TRUE'):
             print("- The selected correction method is: " + str(correction_method) + "")
             print("- The q-value threshold is: " + str(threshold) + "\n")
-        
-        for index in range(len(lines)):
-            if (index % 1000000) == 0 and index != 0:
-                if (print_log == 'TRUE'):
-                    print(str(index) + ' rows have been parsed')             
-            if not ">" in str(lines[index]) and len(str(lines[index]))!=0:
-                motif_length = len(lines[index])
+
+        for _l in tqdm.tqdm(lines):
+
+            if not ">" in str(_l) and len(_l) > 0:
+                motif_length = len(_l)
 
                 probability_one_occurrence_zero_order = 1
                 probability_one_occurrence_first_order = 1
                 probability_one_occurrence_second_order = 1
                 probability_one_occurrence_third_order = 1
             
-                for ind, current_letter in enumerate(str(lines[index])):
+                for ind, current_letter in enumerate(str(_l)):
                     if (ind == 0):
                         probability_one_occurrence_zero_order = probability_one_occurrence_zero_order * aminoacid_percentage[str(current_letter)]
                         probability_one_occurrence_first_order = probability_one_occurrence_first_order * aminoacid_percentage[str(current_letter)]
@@ -406,21 +389,25 @@ with open(nullomers_file, encoding='utf8') as f:
                 probability_zero_occurrence_second_order = math.exp(-expected_number_occurrences_second_order)
                 probability_zero_occurrence_third_order = math.exp(-expected_number_occurrences_third_order)
                 
-		## statistical correction step begins here ##
+        ## statistical correction step begins here ##
                 if (level == 'PROT'):
-                    corrected_probability_zero_occurrence_zero_order = (probability_zero_occurrence_zero_order * pow(20, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_first_order = (probability_zero_occurrence_first_order * pow(20, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_second_order = (probability_zero_occurrence_second_order * pow(20, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_third_order = (probability_zero_occurrence_third_order * pow(20, len(str(lines[index]))))
+                    corrected_probability_zero_occurrence_zero_order = (probability_zero_occurrence_zero_order * pow(20, len(str(_l))))
+                    corrected_probability_zero_occurrence_first_order = (probability_zero_occurrence_first_order * pow(20, len(str(_l))))
+                    corrected_probability_zero_occurrence_second_order = (probability_zero_occurrence_second_order * pow(20, len(str(_l))))
+                    corrected_probability_zero_occurrence_third_order = (probability_zero_occurrence_third_order * pow(20, len(str(_l))))
                 elif (level == 'DNA'):
-                    corrected_probability_zero_occurrence_zero_order = (probability_zero_occurrence_zero_order * pow(4, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_first_order = (probability_zero_occurrence_first_order * pow(4, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_second_order = (probability_zero_occurrence_second_order * pow(4, len(str(lines[index]))))
-                    corrected_probability_zero_occurrence_third_order = (probability_zero_occurrence_third_order * pow(4, len(str(lines[index]))))
+                    corrected_probability_zero_occurrence_zero_order = (probability_zero_occurrence_zero_order * pow(4, len(str(_l))))
+                    corrected_probability_zero_occurrence_first_order = (probability_zero_occurrence_first_order * pow(4, len(str(_l))))
+                    corrected_probability_zero_occurrence_second_order = (probability_zero_occurrence_second_order * pow(4, len(str(_l))))
+                    corrected_probability_zero_occurrence_third_order = (probability_zero_occurrence_third_order * pow(4, len(str(_l))))
                 
             
-                if ((corrected_probability_zero_occurrence_zero_order < threshold) and (corrected_probability_zero_occurrence_first_order < threshold)  and (corrected_probability_zero_occurrence_second_order < threshold) and (corrected_probability_zero_occurrence_third_order < threshold)):
-                    nullomer_list.append(str(lines[index]))
+                if ((corrected_probability_zero_occurrence_zero_order < threshold) and
+                        (corrected_probability_zero_occurrence_first_order < threshold) and
+                        (corrected_probability_zero_occurrence_second_order < threshold) and
+                        (corrected_probability_zero_occurrence_third_order < threshold)):
+
+                    nullomer_list.append(str(_l))
                     exp_num_occur_zero_order.append(expected_number_occurrences_zero_order)
                     exp_num_occur_first_order.append(expected_number_occurrences_first_order)
                     exp_num_occur_second_order.append(expected_number_occurrences_second_order)
@@ -430,16 +417,20 @@ with open(nullomers_file, encoding='utf8') as f:
                     prob_corr_zero_occur_list_first_order.append(corrected_probability_zero_occurrence_first_order)
                     prob_corr_zero_occur_list_second_order.append(corrected_probability_zero_occurrence_second_order)
                     prob_corr_zero_occur_list_third_order.append(corrected_probability_zero_occurrence_third_order)
-                
-                
-        if not (nullomer_list):    
+
+        if not nullomer_list:
             print("No significant results found")
         else:
-            if (print_log == 'TRUE'):
+            if print_log == 'TRUE':
                 print("\n** Results **\n")
-            for itm1, itm2, itm3, itm4, itm5 in zip(nullomer_list, prob_corr_zero_occur_list_zero_order, prob_corr_zero_occur_list_first_order, prob_corr_zero_occur_list_second_order, prob_corr_zero_occur_list_third_order):
-                max_prob = max(itm2, itm3, itm4, itm5)
-                print(str(itm1) + '\t' + str(max_prob))
+            with open('output.txt', 'w') as output_h:
+                for itm1, itm2, itm3, itm4, itm5 in zip(nullomer_list,
+                                                        prob_corr_zero_occur_list_zero_order,
+                                                        prob_corr_zero_occur_list_first_order,
+                                                        prob_corr_zero_occur_list_second_order,
+                                                        prob_corr_zero_occur_list_third_order):
+                    max_prob = max(itm2, itm3, itm4, itm5)
+                    output_h.write('{}\t{}'.format(itm1, max_prob))
 
 #####################
         
