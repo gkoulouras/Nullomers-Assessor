@@ -5,7 +5,7 @@
 
 Nullomers Assessor is a probabilistic methodology for the evaluation of biological MAWs based on Markovian models with multiple-testing correction. A 'significant' MAW is an absent motif which is statistically expected to occur. Significant absent motifs are considered to be under negative selection. The algorithm estimates the frequency of residues and subsequently calculates 3 transition probabilities, one for each of the first three Markovian orders. The method can analyse either nucleotide or amino acid sequences. Three different statistical correction methods have been implemented and provided built-in with the current version of the script.
 
-<b>Preparatory stage:</b>
+<b>Preparatory steps:</b>
 
 The <b>nullomers_assessor.py</b> script requires 2 input files. The first one should be a fasta file containing the entire genome/proteome of a species. The second file should be a list of MAWs. Tools such as <b>[MAW](https://github.com/solonas13/maw)</b> or <b>[em-MAW](https://github.com/solonas13/maw/tree/master/em-maw)</b> can be used for the identification of MAWs. The two above-mentioned tools though, require a fasta file with one header and one sequence in order to calculate globally missing motifs from a given genome/proteome. The specific format can be easily achieved by using the <b>fasta_formatter.py</b> script which transforms a typical fasta file to a two-line fasta file. Sample files are provided in a separate directory. For more information visit: <b>[https://www.nullomers.org/](https://www.nullomers.org/)</b>.
 
