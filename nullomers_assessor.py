@@ -310,7 +310,7 @@ with open(nullomers_file, encoding='utf8') as f:
         ids_in_common = np.intersect1d(ids_in_common, idx3)
 
         if ids_in_common.size:
-            with open('output.txt', 'w') as output_h:
+            with open('significant.txt', 'w') as output_h:
                 if (print_log == 'TRUE'):
                     print("\n** Results **\n")
                 for index in ids_in_common:
@@ -423,14 +423,14 @@ with open(nullomers_file, encoding='utf8') as f:
         else:
             if print_log == 'TRUE':
                 print("\n** Results **\n")
-            with open('output.txt', 'w') as output_h:
+            with open('significant.txt', 'w') as output_h:
                 for itm1, itm2, itm3, itm4, itm5 in zip(nullomer_list,
                                                         prob_corr_zero_occur_list_zero_order,
                                                         prob_corr_zero_occur_list_first_order,
                                                         prob_corr_zero_occur_list_second_order,
                                                         prob_corr_zero_occur_list_third_order):
                     max_prob = max(itm2, itm3, itm4, itm5)
-                    output_h.write('{}\t{}'.format(itm1, max_prob))
+                    output_h.write('{}\t{}\n'.format(itm1, max_prob))
 
 #####################
         
